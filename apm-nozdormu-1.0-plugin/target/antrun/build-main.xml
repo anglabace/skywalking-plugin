@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.runtime.classpath"/>
+  <if>
+    <equals arg2="jar" arg1="jar"/>
+    <then>
+      <mkdir dir="/Users/chenxiaotong/Work/chen/skywalking-plugin/apm-nozdormu-1.0-plugin/target/../../../../skywalking-agent/plugins"/>
+      <copy file="/Users/chenxiaotong/Work/chen/skywalking-plugin/apm-nozdormu-1.0-plugin/target/apm-nozdormu-1.0-plugin-8.2.0.jar" tofile="/Users/chenxiaotong/Work/chen/skywalking-plugin/apm-nozdormu-1.0-plugin/target/../../../../skywalking-agent/plugins/apm-nozdormu-1.0-plugin-8.2.0.jar" overwrite="true"/>
+    </then>
+  </if>
+</target>
+</project>
